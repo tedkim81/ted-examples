@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_orange_light"
+        app:title="@string/app_name" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                tools:text="MainActivity" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="12dp"
+                android:text="Standard"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStandardWithAffinity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="12dp"
+                android:text="Standard with affinity(.MyTaskAffinity)"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSingleTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="12dp"
+                android:text="SingleTop"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSingleTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="12dp"
+                android:text="SingleTask"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSingleTaskWithAffinity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="12dp"
+                android:text="SingleTask with affinity(.MyTaskAffinity)"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSingleInstance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="12dp"
+                android:text="SingleInstance"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSingleInstanceWithAffinity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="12dp"
+                android:text="SingleInstance with affinity(.MyTaskAffinity)"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSingleInstancePerTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="12dp"
+                android:text="SingleInstancePerTask"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSingleInstancePerTaskWithAffinity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="12dp"
+                android:text="SingleInstancePerTask with affinity(.MyTaskAffinity)"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxBroughtToFront"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxClearTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_CLEAR_TASK"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxClearTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_CLEAR_TOP"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxExcludeFromRecents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxForwardResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_FORWARD_RESULT"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxLaunchedFromHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxLaunchAdjacent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_LAUNCH_ADJACENT"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxMultipleTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_MULTIPLE_TASK"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxNewDocument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_NEW_DOCUMENT"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxNewTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_NEW_TASK"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxNoAnimation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_NO_ANIMATION"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxNoHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_NO_HISTORY"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxNoUserAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_NO_USER_ACTION"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxPreviousIsTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_PREVIOUS_IS_TOP"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxReorderToFront"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_REORDER_TO_FRONT"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxResetTaskIfNeeded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxRetainInRecents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_RETAIN_IN_RECENTS"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxSingleTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_SINGLE_TOP"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxTaskOnHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_TASK_ON_HOME"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxMatchExternal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_MATCH_EXTERNAL"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxRequireDefault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_REQUIRE_DEFAULT"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxRequireNonBrowser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent.FLAG_ACTIVITY_REQUIRE_NON_BROWSER"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="To check the status of tasks and activities, run 'adb shell dumpsys activity recents' or 'adb shell dumpsys activity activities' or 'adb shell dumpsys activity activities | grep -i Hist'."
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
