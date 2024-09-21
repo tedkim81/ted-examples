@@ -17,9 +17,9 @@ def extract_info(html):
         else:
             description = None
 
-        image = soup.find('meta', property='og:image')
-        if image and 'content' in image.attrs:
-            image = image['content']
+        image_tag = soup.find('meta', property='og:image')
+        if image_tag and 'content' in image_tag.attrs:
+            image = image_tag['content']
         else:
             image = None
             img_tags = soup.find_all('img')
