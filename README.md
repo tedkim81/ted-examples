@@ -10,6 +10,8 @@ The repository currently includes the following sub-projects:
 2. **background-work-example**: An Android project showcasing various techniques for executing tasks in the background. It includes examples for Service, Coroutine, AIDL, JobScheduler, WorkManager.
 3. **launch-mode-tester**: An Android application for testing and understanding the different launch modes in Android activities. Users can observe how activities are managed based on launch modes set in the AndroidManifest.xml or dynamically via Intent.
 4. **web-scraping-example**: A project that provides examples of web scraping techniques using Python, demonstrating how to extract and process data from websites.
+5. **chrome-extension-example**: A Chrome extension project demonstrating how to create browser extensions, including manifest configuration, background scripts, content scripts, and popup interfaces.
+6. **fast-api-example**: A FastAPI-based project showcasing modern Python web API development, including async/await patterns, dependency injection, and API documentation with Swagger UI.
 
 ## Future Additions
 
