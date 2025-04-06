@@ -2,4 +2,42 @@
 env.sh
 .env
 venv
+.venv
 *.pyc
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Chrome Extension
+*.crx
+*.pem
+*.zip
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

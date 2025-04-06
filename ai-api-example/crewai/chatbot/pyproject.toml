@@ -1,0 +1,24 @@
+[project]
+name = "chatbot"
+version = "0.1.0"
+description = "chatbot using crewAI"
+authors = [
+    { name = "Ted Kim", email = "tedkim.developer@gmail.com" },
+]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.102.0,<1.0.0",
+]
+
+[project.scripts]
+chatbot = "chatbot.main:run"
+run_crew = "chatbot.main:run"
+train = "chatbot.main:train"
+replay = "chatbot.main:replay"
+test = "chatbot.main:test"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
